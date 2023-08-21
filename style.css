@@ -1,0 +1,25 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+.btn-ss {
+     border: #E94C2A 2px solid;
+     color: #fff;
+}
+.btn-out {
+     background-color: #E94C2A;
+     color: #fff;
+     font-family: Inter;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal; 
+}
+b
+.btn-out:hover {
+     background-color: #fff;
+     color: #E94C2A;
+}
+.bg-body {
+     background-color: #E94C2A;
+}
