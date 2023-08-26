@@ -1,10 +1,14 @@
-/* :root{
-
-} */
+/* Font LInk for Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
      padding: 0;
      margin: 0;
      box-sizing: border-box;
+     font-family: 'Inter', sans-serif;
+}
+/* First NavBar */
+.bg-dark{
+     padding-top: 0%;
 }
 button,h1,h2,h3,h4,h5,h6,label,p,li{
      font-family: Arial, Helvetica, sans-serif;
@@ -25,16 +29,30 @@ button{
      border: #E94C2A 4px solid;
      color: #fff;
      background-color: black;
+     border-radius: 10px;
+}
+.btn-ss:hover {
+     background-color: #E94C2A;
+     color: #fff;
 }
 .btn-out,.cta {
      background-color: #E94C2A;
      color: #fff;
 }
 .btn-out:hover,.cta:hover {
+     font-weight: 700;
+     border-radius: 10px; 
+}
+.btn-out:hover {
      background-color: #fff;
      color: #E94C2A;
 }
-.bg-body {
+/* Second NAvBar */
+.navbar-nav {
+     margin: 0 auto;
+     line-height: 0%;
+}
+.bg- {
      background-color: #E94C2A;
 }
 .bg-dark{
@@ -138,4 +156,64 @@ button{
 .download-mobile-container{
      background-color: #f7eeec;
      height: 60vh;
+}
+/* Hero Section */
+.hero{
+     place-items: center;
+     height: 80vh;
+}
+.text {
+     flex-direction: column;
+     align-items: center;
+     gap: 50px; 
+}
+.h1 {
+     color: #E94C2A;
+     font-size: 50px;
+     font-style: normal;
+     font-weight: 900;
+     line-height: normal;
+     letter-spacing: 1px; 
+}
+.p {
+     color: #000;
+     font-size: 20px;
+     font-weight: 400;
+     line-height: normal;
+     letter-spacing: 0.4px;
+     text-align: justify;
+}
+.get {
+     width: 200px;
+     height: 66.048px;
+     border-radius: 20px;
+}
+.get:hover {
+     border: 2px #E94C2A solid;
+}
+/* Advet to Download App */
+.h2 {
+     font-size: 40px;
+     color: #000;
+}
+.p {
+     font-size: 15px;
+}
+.down{
+     background-color: #000;
+     display: flex;
+     place-items: center;
+     line-height: 0%;
+     gap: 10px;
+     color: #fff;
+}
+.down:hover{
+     border: #000 2px solid;
+     color: #000;
+}
+.d-{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
 }
