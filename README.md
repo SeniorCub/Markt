@@ -11,6 +11,7 @@ Markt is an innovative and dynamic marketplace project designed to revolutionize
 - ✨ **Bargain for Better Deals**: Markt allows buyers to negotiate prices directly with sellers. No fixed prices—just a friendly and interactive bargaining system.
 - 🚀 **Seller Empowerment**: Sellers have the flexibility to accept or counter offers, creating a win-win scenario for both parties.
 - 📈 **Track Price Histories**: Keep an eye on how product prices change over time. Markt provides historical price data to help buyers make informed decisions.
+- 🧙‍♂️ **Dynamic Shopping** : Take charge of your shopping. Ask directly for products even if you do not remember the name, get the specific product or service you want directly to your doorstep.
 - 🌐 **Global Marketplace**: Connect with sellers and buyers from around the world. Markt brings diverse products and cultures together in one marketplace.
 - 🔐 **Secure Transactions**: Our platform prioritizes security. All transactions are conducted safely through trusted payment gateways.
 - 📚 **Open Source**: Markt is built on open-source technologies, fostering collaboration and transparency in its development.
