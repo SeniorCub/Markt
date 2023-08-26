@@ -92,15 +92,11 @@ button{
      font-weight: bold;
      color: black;
 }
-.header,.section{
+.section{
      display: flex;
      align-items: center;
      justify-content: center;
      background-color: #f9e1dc;
-}
-.colored-heading{
-     color: #E94C2A;
-     font-size: 3rem;
 }
 .first{
      height: 80vh;
@@ -110,12 +106,6 @@ button{
      place-items: center;
      box-sizing: border-box;
      padding: 15px;
-}
-.first-in-headers{
-     width: 45%;
-}
-.sec-in-headers{
-     width: 55%;
 }
 .first-section{
      width: 100%;
@@ -152,10 +142,6 @@ button{
      height: 300px;
      width: 200px;
      margin: 30px;
-}
-.download-mobile-container{
-     background-color: #f7eeec;
-     height: 60vh;
 }
 /* Hero Section */
 .hero{
