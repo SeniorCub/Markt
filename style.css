@@ -73,6 +73,13 @@
      border: 2px #E94C2A solid;
 }
 /* Advet to Download App */
+.h2 {
+     font-size: 40px;
+     color: #000;
+}
+.p {
+     font-size: 15px;
+}
 .down{
      background-color: #000;
      display: flex;
