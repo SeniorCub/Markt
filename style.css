@@ -1,21 +1,14 @@
 /* Font LInk for Inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
      padding: 0;
      margin: 0;
      box-sizing: border-box;
      font-family: 'Inter', sans-serif;
 }
+
 /* First NavBar */
-.bg-dark{
-     padding-top: 0%;
-}
-button,h1,h2,h3,h4,h5,h6,label,p,li{
-     font-family: Arial, Helvetica, sans-serif;
-}
-h1,h2,h3,h4,h5,h6,label,p{
-     margin-bottom: 20px;
-}
 button{
      padding: 10px;
      padding-left: 30px;
@@ -28,12 +21,11 @@ button{
 .btn-ss {
      border: #E94C2A 4px solid;
      color: #fff;
-     background-color: black;
-     border-radius: 10px;
 }
 .btn-ss:hover {
      background-color: #E94C2A;
      color: #fff;
+     border-radius: 20px;
 }
 .btn-out,.cta {
      background-color: #E94C2A;
@@ -41,12 +33,13 @@ button{
 }
 .btn-out:hover,.cta:hover {
      font-weight: 700;
-     border-radius: 10px; 
+     border-radius: 20px; 
 }
 .btn-out:hover {
      background-color: #fff;
      color: #E94C2A;
 }
+
 /* Second NAvBar */
 .navbar-nav {
      margin: 0 auto;
@@ -54,35 +47,6 @@ button{
 }
 .bg- {
      background-color: #E94C2A;
-}
-.bg-dark{
-     background-color: black;
-     display: flex;
-}
-.sec-nav{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-}
-.xe-sixty{
-     max-width: 70%;
-     width: 50%;
-}
-.container-fluid{
-     display: flex;
-     align-items: center;
-}
-.spaced{
-     width: 100%;
-     justify-content: space-between;
-     padding: 10px;
-}
-.nav{
-     display: flex;
-     justify-content: space-between;
-}
-.contains-nav-ul{
-     width: 100%;
 }
 .nav-item{
      list-style-type: none;
@@ -92,6 +56,58 @@ button{
      font-weight: bold;
      color: black;
 }
+.navbar-nav li:hover {
+     box-shadow: 5px 5px 5px #000;
+}
+.navbar-nav li {
+     padding: 5px;
+}
+.nav{
+     display: flex;
+     justify-content: space-between;
+}
+.contains-nav-ul{
+     width: 100%;
+}
+
+/* Hero Section */
+.hero{
+     place-items: center;
+     height: 80vh;
+     background-color: #f9e1dc;
+}
+.text {
+     flex-direction: column;
+     align-items: center;
+     gap: 50px; 
+}
+.h1 {
+     color: #E94C2A;
+     font-size: 50px;
+     font-style: normal;
+     font-weight: 900;
+     line-height: normal;
+     letter-spacing: 1px; 
+}
+.p {
+     color: #000;
+     font-size: 20px;
+     font-weight: 400;
+     line-height: normal;
+     letter-spacing: 0.4px;
+     text-align: justify;
+}
+.get {
+     width: 200px;
+     height: 66.048px;
+     border-radius: 20px;
+}
+.get:hover {
+     border: 2px #E94C2A solid;
+}
+
+
+/* Section of Boxes */
 .section{
      display: flex;
      align-items: center;
@@ -143,40 +159,26 @@ button{
      width: 200px;
      margin: 30px;
 }
-/* Hero Section */
-.hero{
+
+/* Our Top Deals */
+.deals {
+     padding: 10px 50px;
+     display: flex;
+     justify-content: space-between;
      place-items: center;
-     height: 80vh;
 }
-.text {
-     flex-direction: column;
-     align-items: center;
-     gap: 50px; 
-}
-.h1 {
-     color: #E94C2A;
-     font-size: 50px;
-     font-style: normal;
-     font-weight: 900;
-     line-height: normal;
-     letter-spacing: 1px; 
-}
-.p {
+.top {
+     font-weight: 700;
      color: #000;
      font-size: 20px;
-     font-weight: 400;
-     line-height: normal;
-     letter-spacing: 0.4px;
-     text-align: justify;
 }
-.get {
-     width: 200px;
-     height: 66.048px;
-     border-radius: 20px;
+.btt {
+     color: #000;
+     font-size: 15px;
+     font-weight: 700;
 }
-.get:hover {
-     border: 2px #E94C2A solid;
-}
+
+
 /* Advet to Download App */
 .h2 {
      font-size: 40px;
@@ -202,4 +204,60 @@ button{
      flex-direction: column;
      align-items: center;
      justify-content: center;
+}
+
+
+/* Subscribe */
+.subscribe {
+     padding: 50px 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     place-items: center;
+     gap: 10px;
+}
+.subscribe .h1 {
+     font-size: 30px;
+}
+#sub-mail {
+     border-radius: 10px;
+     border: #E94C2A 1px solid;
+     outline: #E94C2A 1px solid;
+     background-color: #f9e1dc;
+     color: #000;
+}
+#sub-scribe {
+     border: #333 2px solid;
+     outline:none;
+     padding: 0 10px;
+     font-weight: 500;
+     background-color: #E94C2A;
+}
+#sub-scribe:hover {
+     border: #E94C2A 2px solid;
+     background-color: #fff;
+     color: #333;
+}
+
+/* Footer */
+footer {
+     border-radius: 50px 50px 0px 0px; 
+     padding: 50px 100px;
+}
+.lists {
+     display: flex;
+     justify-content: space-between;
+     list-style: none;
+}
+a {
+     text-decoration: none;
+     color: #fff;
+     font-size: 20px;
+}
+.copy {
+     color: #fff;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     place-items: center;
 }
