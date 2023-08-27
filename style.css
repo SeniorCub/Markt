@@ -161,6 +161,9 @@ button{
 }
 
 /* Our Top Deals */
+.dealss {
+     height: 100vh;
+}
 .deals {
      padding: 10px 50px;
      display: flex;
@@ -326,14 +329,3 @@ a {
      place-items: center;
 }
 
-@media screen and (max-width:1024px){
-     /* Second hero at the bottom */
-     .s-hero-right,.s-hero-left{
-          width: 100%;
-          height: 50%;
-     }
-     .sec-hero-cont{
-          flex-direction: column-reverse;
-          height: 100vh;
-     }
-}
