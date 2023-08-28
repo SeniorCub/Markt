@@ -162,7 +162,9 @@ button{
 
 /* Our Top Deals */
 .dealss {
-     height: 100vh;
+     /* height: 100vh; */
+     background-color: #f9e1dc;
+     border-bottom: 1px solid black;
 }
 .deals {
      padding: 10px 50px;
@@ -180,7 +182,38 @@ button{
      font-size: 15px;
      font-weight: 700;
 }
-
+.card {
+     border: none;
+     background-color: #fff;
+     padding: 10px;
+}
+.percent {
+     padding: 5px;
+}
+.love {
+     border-radius: 50%;
+     padding: 5px;
+}
+.card-title{
+     justify-content: space-between;
+     place-items: center;
+     align-items: center;
+}
+.coll {
+     flex-direction: column;
+}
+.original {
+     color: #E94C2A;
+     text-decoration: line-through;
+}
+.btn-primary {
+     border: none;
+     background-color: #E94C2A;
+}
+.btn-pri {
+     color: #E94C2A;
+     background-color: #f9e1dc;
+}
 
 /* Advet to Download App */
 .h2 {
@@ -227,7 +260,7 @@ button{
 .floaters{
      position: absolute;
 }
-.cards{
+.boos{
      display: flex;
      align-items: center;
      border: hidden;
@@ -238,7 +271,7 @@ button{
      min-width: 200px;
      max-width: 250px;
 }
-.cards>h1,.cards>h2,.cards>h3,.cards>h4,.cards>p{
+.boos>h1,.boos>h2,.boos>h3,.boos>h4,.boos>p{
      font-weight: bolder;
 }
 .card-one{
