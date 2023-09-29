@@ -19,7 +19,7 @@ fetch('https://fakestoreapi.com/products?limit=12')
 document.querySelector('.cards').innerHTML += `
      <div class="card" style="width: 20rem; height: 30rem;">
           <div class="bon card-title d-flex">
-               <a href="#" class="btn btn-pri percent">-59%</a>
+               <a href="#" class="btn btn-pri percent">${element.rating.rate}</a>
                <a href="#" class="btn btn-pri love"><i class="fa-regular fa-heart" style="color: #e94c2a;"></i></a>
           </div>
 
