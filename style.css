@@ -6,8 +6,7 @@
      margin: 0;
      box-sizing: border-box;
      font-family: 'Inter', sans-serif;
-     /* border: 1px solid yellow; */
-     /* overflow-x: hidden; */
+     overflow-x: hidden;
 }
 
 /* First NavBar */
@@ -83,12 +82,9 @@ button{
      align-items: center;
      gap: 50px; 
 }
-.texts {
-     text-align: left;
-}
 .h1 {
      color: #E94C2A;
-     font-size: 40px;
+     font-size: 50px;
      font-style: normal;
      font-weight: 900;
      line-height: normal;
@@ -100,17 +96,20 @@ button{
      font-weight: 400;
      line-height: normal;
      letter-spacing: 0.4px;
-     text-align: center;
+     text-align: justify;
 }
 .get {
      width: 200px;
-     height: 60px;
+     height: 66.048px;
      border-radius: 20px;
 }
 .get:hover {
      border: 2px #E94C2A solid;
 }
-
+.img1 img {
+     width: 100%;
+     height: 100%;
+}
 
 /* Section of Boxes */
 .section{
@@ -167,7 +166,9 @@ button{
 
 /* Our Top Deals */
 .dealss {
-     height: 100vh;
+     /* height: 100vh; */
+     background-color: #f9e1dc;
+     border-bottom: 1px solid black;
 }
 .deals {
      padding: 10px 50px;
@@ -185,7 +186,50 @@ button{
      font-size: 15px;
      font-weight: 700;
 }
-
+.card {
+     border: none;
+     background-color: #fff;
+     padding: 10px;
+     display: flex;
+     justify-content: space-between;
+}
+.percent {
+     padding: 5px;
+}
+.love {
+     border-radius: 50%;
+     padding: 5px;
+}
+.card-title{
+     justify-content: space-between;
+     place-items: center;
+     align-items: center;
+}
+.card img {
+     width: 100%;
+     height: 200px;
+     object-fit: contain;
+}
+.coll {
+     flex-direction: column;
+}
+.original {
+     color: #E94C2A;
+     text-decoration: line-through;
+}
+.btn-primary {
+     border: none;
+     background-color: #E94C2A;
+}
+.btn-primary:hover {
+     color: #E94C2A;
+     background-color: #f9e1dc;
+     border: #E94C2A 1px solid;
+}
+.btn-pri {
+     color: #E94C2A;
+     background-color: #f9e1dc;
+}
 
 /* Advet to Download App */
 .h2 {
@@ -212,27 +256,21 @@ button{
      flex-direction: column;
      align-items: center;
      justify-content: center;
+     color: #fff;
+}
+.d- p {
+     color: #fff;
 }
 
 /* Second hero at the bottom */
 .sec-hero-cont{
-     display: flex;
-}
-.sec-heading{
-     font-size: 2.5rem;
-}
-.s-hero-left{
-     width: 40%;
-}
-.s-hero-right{
      position: relative;
-     width: 60%;
-     height: 70%;
+     height: 80vh;
 }
 .floaters{
      position: absolute;
 }
-.cards{
+.boos{
      display: flex;
      align-items: center;
      border: hidden;
@@ -243,37 +281,34 @@ button{
      min-width: 200px;
      max-width: 250px;
 }
-.cards>h1,.cards>h2,.cards>h3,.cards>h4,.cards>p{
-     font-weight: bolder;
+.boos:hover{
+     box-shadow: rgba(0, 0, 0, 0.35) 15px 15px 5px;
+}
+
+.boos>h1,.boos>h2,.boos>h3,.boos>h4,.boos>p,span>h2,span>h4{
+     font-weight: bold;
+     font-size: medium;
 }
 .card-one{
-     top: 80px;
-     left: 0;
+     top: 0%;
+     left: 30%;
      z-index: 3;
 }
-.card-one>h1{
-     font-size: 1.5em;
-}
-.card-two{
-     width: 220px;
-     top: -60px;
-     right: 110px;
-     z-index: 1;
-}
+
 .card-three{
-     bottom: 80px;
-     right: 110px;
-     z-index: 3;
+     bottom: 61%;
+     left: 63%;
+     z-index: 1;
 }
 .card-four{
-     bottom: -20px;
-     left: 30px;
-     z-index: 1;
+     bottom: 10%;
+     left: 28%;
+     z-index: 2;
 }
 .main-img{
      max-width: 100%;
      z-index: 2;
-     left: 70px;
+     left: 35%;
 }
 .card-prod-img{
      max-width: 50%;
@@ -333,4 +368,3 @@ a {
      justify-content: center;
      place-items: center;
 }
-

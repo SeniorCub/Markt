@@ -48,9 +48,9 @@
      </nav>
 
         
-     <div class="hero px-5 d-flex row">
-          <div class="text d-flex col-lg-7">
-              <div class="texts">
+     <div class="hero container-fluid row px-5 d-flex">
+          <div class="text d-flex col-8">
+              <div class="text">
                     <div class="h1">
                          Discover a World of Endless Shopping Possibilities!
                     </div>
@@ -60,7 +60,7 @@
               </div>
                <button class="btn btn-lg btn-out get" type="submit">Get Started</button>
           </div>
-          <div class="img1 col-lg-5">
+          <div class="img1 col-4">
                <img src="images/smartmockups_ll4doah4-removebg-preview 1.png" alt="phone and tablet view of Markt app">
           </div>
      </div>
@@ -102,11 +102,15 @@
                <div class="top">Our Top Deals</div>
                <div class="btn btn-md bg-light btt">Explore  <i class="fa-solid fa-right-to-bracket" style="color: #333;"></i></div>
           </div>
+
+          <div class="cards p-5 row gap-5 justify-content-center">
+                
+          </div>
      </section>
 
      <!-- Advert for Download App -->
-     <section class="hero px-5 row d-flex advert">
-          <div class="text col-lg-5">
+     <section class="advert hero row container-fluid px-5">
+          <div class="text col-7">
                <div class="h2">
                     Effortless and convenient shopping at your fingertips...
                </div>
@@ -118,52 +122,45 @@
                          <i class="fa-brands fa-google-play" style="color: #04bf00;"></i>
                          <div class="d-">
                               <h6>Download on</h6>
-                              <p>Play Store</p>
+                              <h6>Play Store</h6>
                          </div>
                     </button>
                     <button class="btn btn-lg down" type="submit">
                          <i class="fa-brands fa-apple" style="color: #8a8a8afc;"></i>
                          <div class="d-">
                               <h6>Get on</h6>
-                              <p>App Store</p>
+                              <h6>App Store</h6>
                          </div>
                     </button>
                </div>
           </div>
-          <div class="img2 col-lg-7">
+          <div class="col-4 img1">
                <img src="images/smartmockups_ll79pg0q-removebg-preview 1.png" alt="">
           </div>
      </section>
 
      <!-- Woman pressing phone section -->
-     <section class="sec-hero-cont hero container-fluid px-5">
-          <div class="s-hero-right">
-               <img src="./images/hr-sc-12225.png" alt="" class="floaters main-img">
-               <span class="floaters cards card-one">
-                    <h1>Your product is ready with a discount</h1>
-               </span>
-               <span class="floaters cards card-two">
-                         <img src="./images/hr-sc-23324.png" alt="" class="card-prod-img" width="100"
-                          height="100">
-                         <span>
-                              <h2>Orange Bag</h2>
-                              <h4>7500</h4>
-                         </span>
-               </span>
-<<<<<<< Updated upstream
-               <span class="floaters cards card-three"></span>
-               <span class="floaters cards card-four">
-=======
-               <span class="floaters boos card-three">
-                    <img src="" alt="">
-               </span>
-               <span class="floaters boos card-four">
->>>>>>> Stashed changes
-                    <h4>
-                         40 products sold this month with a profit of 40% compared to last month
-                    </h4>
-               </span>
-          </div>
+     <section class="sec-hero-cont hero container-fluid">
+          <img src="./images/hr-sc-12225.png" alt="" class="floaters main-img">
+
+          <span class="floaters boos card-three">
+               <h1>Your product is ready with a discount</h1>
+          </span>
+          
+          <span class="floaters boos card-one">
+                    <img src="./images/hr-sc-23324.png" alt="" class="card-prod-img" width="100"
+                         height="100">
+                    <span>
+                         <h2>Orange Bag</h2>
+                         <h4>7500</h4>
+                    </span>
+          </span>
+          
+          <span class="floaters boos card-four">
+               <h4>
+                    40 products sold this month with a profit of 40% compared to last month
+               </h4>
+          </span>
      </section>
 
      <!-- Subscribe -->
@@ -213,10 +210,7 @@
      <script src="https://kit.fontawesome.com/2a49fbdbb8.js" crossorigin="anonymous"></script>
      <!-- BootStrap Script Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script>
-      const btn = document.querySelector(".btt").addEventListener("mouseover", () => {
-           fa-right-to-bracket
-      })
-    </script>
+    <!-- Normal script -->
+    <script src="script.js"></script>
   </body>
 </html>
