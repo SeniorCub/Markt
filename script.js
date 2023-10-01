@@ -38,4 +38,4 @@ document.querySelector('.cards').innerHTML += `
           </div>
      </div>
 `
-}))
+}));
