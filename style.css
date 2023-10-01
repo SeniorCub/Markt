@@ -6,7 +6,7 @@
      margin: 0;
      box-sizing: border-box;
      font-family: 'Inter', sans-serif;
-     overflow-x: hidden;
+     /* border: 1px solid yellow; */
 }
 
 /* First NavBar */
@@ -72,10 +72,11 @@ button{
 }
 
 /* Hero Section */
-.hero{
+#hero{
      place-items: center;
      height: 80vh;
      background-color: #f9e1dc;
+     width: 100%;
 }
 .text {
      flex-direction: column;
@@ -266,6 +267,7 @@ button{
 .sec-hero-cont{
      position: relative;
      height: 80vh;
+     background-color: #f9e1dc;
 }
 .floaters{
      position: absolute;
