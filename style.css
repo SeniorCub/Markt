@@ -74,9 +74,8 @@ button{
 /* Hero Section */
 #hero{
      place-items: center;
-     height: 80vh;
      background-color: #f9e1dc;
-     width: 100%;
+     margin: 0;
 }
 .text {
      flex-direction: column;
