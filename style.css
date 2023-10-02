@@ -8,6 +8,9 @@
      font-family: 'Inter', sans-serif;
      /* border: 1px solid yellow; */
 }
+body {
+     overflow-x:hidden;
+}
 
 /* First NavBar */
 button{
@@ -130,39 +133,71 @@ button{
 .first-section{
      width: 100%;
 }
-.product-display-cont{
+.product-display-cont {
      display: grid;
      grid-template-rows: auto auto;
-     grid-template-columns: repeat(5,auto);
-     overflow-x:hidden;
+     grid-template-columns: repeat(10, auto);
      width: 100%;
-}
-#first-section-heading-cont{
-     width: 100%;
-     padding: 30px;
-     display: grid;
-     place-items: center;
-}
-#first-section-heading{
-     text-align: center;
-     max-width: 70%;
-     font-size: 2.5rem;
-}
-#first-section-heading::after{
-     content: "😎";
-}
-.disp-cont-for-two{
+     white-space: nowrap;
+     animation: moveRight 10s linear infinite;
+ }
+ 
+ .disp-cont-for-two {
      transform: rotate(320deg);
      margin: 20px;
-}
-.product-cont{
+ }
+ 
+ .product-cont {
+     position: relative;
      border: solid black 3px;
      border-radius: 20px;
      background-color: white;
      height: 300px;
      width: 200px;
      margin: 30px;
-}
+     overflow: hidden;
+     transition: filter 0.3s ease-in-out;
+ }
+ 
+ .hover-content {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     opacity: 0;
+     transition: opacity 0.3s ease-in-out;
+ }
+ 
+ .hover-content p {
+     margin: 0;
+     font-size: 16px; /* Adjust the font size */
+     color: black; /* Adjust the text color */
+ }
+ 
+ .product-cont:hover .hover-content {
+     opacity: 1;
+ }
+ 
+ .product-cont:hover {
+     filter: blur(5px); /* Adjust the blur amount as needed */
+ }
+ 
+ @keyframes moveRight {
+     0% {
+         transform: translateX(0);
+     }
+     100% {
+         transform: translateX(-100%); /* Adjust the distance to move */
+     }
+ }
+ 
+  
+ 
 
 /* Our Top Deals */
 .dealss {
