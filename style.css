@@ -131,11 +131,9 @@ button{
      width: 100%;
 }
 .product-display-cont{
-     display: grid;
-     grid-template-rows: auto auto;
-     grid-template-columns: repeat(5,auto);
-     overflow-x:hidden;
-     width: 100%;
+     display: flex;
+     width: max-content;
+     animation: autoslideshow 80s infinite linear forwards;
 }
 #first-section-heading-cont{
      width: 100%;
@@ -153,15 +151,21 @@ button{
 }
 .disp-cont-for-two{
      transform: rotate(320deg);
-     margin: 20px;
+     margin: 15px;
+     width: fit-content;
 }
 .product-cont{
      border: solid black 3px;
      border-radius: 20px;
      background-color: white;
-     height: 300px;
-     width: 200px;
-     margin: 30px;
+     height: 180px;
+     width: 160px;
+     margin: 20px;
+     cursor: pointer;
+}
+@keyframes autoslideshow {
+     from{transform: translate(-50px);}
+     to{transform: translate(calc(-50% - 0.5rem));}
 }
 
 /* Our Top Deals */
@@ -231,7 +235,7 @@ button{
      background-color: #f9e1dc;
 }
 
-/* Advet to Download App */
+/* Advert to Download App */
 .h2 {
      font-size: 40px;
      color: #000;
@@ -246,6 +250,8 @@ button{
      line-height: 0%;
      gap: 10px;
      color: #fff;
+     min-width: max-content;
+     margin: 0;
 }
 .down:hover{
      border: #000 2px solid;
@@ -254,12 +260,17 @@ button{
 .d-{
      display: flex;
      flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     color: #fff;
+     align-items: baseline;
 }
-.d- p {
-     color: #fff;
+.d- h6 {
+     margin: 0;
+     font-size: 0.9rem;
+     font-weight: medium;
+}
+.coversall{
+     width: max-content;
+     padding: 1.5rem;
+     padding-left: 0;
 }
 
 /* Second hero at the bottom */
