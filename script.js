@@ -49,6 +49,7 @@ document.querySelector('.product-display-cont').innerHTML += `
                <div class="hover-content">
                     <p>${element.title}</p>
                </div>
+     
           </div>
           <div class="product-cont">
                <img src= ${element.image}>
