@@ -39,7 +39,7 @@ document.querySelector('.cards').innerHTML += `
      </div>
 `
 }));
-fetch('https://fakestoreapi.com/products?limit=20')
+fetch('https://fakestoreapi.com/products?limit=50')
 .then (data => data.json())
 .then(data2 => data2.forEach(element => {
 document.querySelector('.product-display-cont').innerHTML += `
@@ -49,9 +49,6 @@ document.querySelector('.product-display-cont').innerHTML += `
                <div class="hover-content">
                     <p>${element.title}</p>
                </div>
-     
-          </div>
-          <div class="product-cont">
                <img src= ${element.image}>
                <div class="hover-content">
                     <p>${element.title}</p>
