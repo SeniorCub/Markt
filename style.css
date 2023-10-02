@@ -6,7 +6,10 @@
      margin: 0;
      box-sizing: border-box;
      font-family: 'Inter', sans-serif;
-     overflow-x: hidden;
+     /* border: 1px solid yellow; */
+}
+body {
+     overflow-x:hidden;
 }
 
 /* First NavBar */
@@ -72,7 +75,7 @@ button{
 }
 
 /* Hero Section */
-.hero{
+#hero{
      place-items: center;
      background-color: #f9e1dc;
      margin: 0;
@@ -163,11 +166,34 @@ button{
      margin: 20px;
      cursor: pointer;
 }
+.hover-content {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     opacity: 0;
+     background-color: rgba(255, 255, 255, 0.309);
+     transition: opacity 0.3s ease-in-out;
+   }
+   
+   .hover-content p {
+     margin: 0;
+     font-size: 16px;
+     color: black;
+   }
+   
+   .product-cont:hover .hover-content {
+     opacity: 1;
+   }
 @keyframes autoslideshow {
      from{transform: translate(-50px);}
      to{transform: translate(calc(-50% - 0.5rem));}
 }
-
 /* Our Top Deals */
 .dealss {
      /* height: 100vh; */
@@ -277,6 +303,7 @@ button{
 .sec-hero-cont{
      position: relative;
      height: 80vh;
+     background-color: #f9e1dc;
 }
 .floaters{
      position: absolute;
