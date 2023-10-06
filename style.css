@@ -133,11 +133,6 @@ button{
 .first-section{
      width: 100%;
 }
-.product-display-cont{
-     display: flex;
-     width: max-content;
-     animation: autoslideshow 80s infinite linear forwards;
-}
 #first-section-heading-cont{
      width: 100%;
      padding: 30px;
@@ -152,44 +147,62 @@ button{
 #first-section-heading::after{
      content: "😎";
 }
-.disp-cont-for-two{
-     transform: rotate(320deg);
-     margin: 15px;
-     width: fit-content;
+     /* animation: autoslideshow 80s infinite linear forwards; */
+.product-display-cont {
+     display: grid;
+     grid-template-rows: auto auto;
+     grid-template-columns: repeat(10, auto);
+     width: 100%;
+     white-space: nowrap;
+     animation: autoslideshow 80s infinite linear forwards;
 }
-.product-cont{
+
+.disp-cont-for-two {
+     transform: rotate(320deg);
+     margin: 20px;
+}
+
+.product-cont {
+     position: relative;
      border: solid black 3px;
      border-radius: 20px;
      background-color: white;
-     height: 180px;
-     width: 160px;
-     margin: 20px;
-     cursor: pointer;
+     height: 300px;
+     width: 200px;
+     margin: 30px;
+     overflow: hidden;
 }
+
+.product-cont img{
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+}
+
 .hover-content {
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
      opacity: 0;
      background-color: rgba(255, 255, 255, 0.309);
-     transition: opacity 0.3s ease-in-out;
-   }
-   
-   .hover-content p {
-     margin: 0;
+     padding: 30px;
+     margin: 0 auto;
+}
+
+.hover-content p {
+     left: ;
+     padding: 10px;
      font-size: 16px;
      color: black;
-   }
-   
-   .product-cont:hover .hover-content {
+     text-align: center; /* Center the text horizontally */
+}
+
+.product-cont:hover .hover-content {
      opacity: 1;
-   }
+}      
+     
 @keyframes autoslideshow {
      from{transform: translate(-50px);}
      to{transform: translate(calc(-50% - 0.5rem));}
