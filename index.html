@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 
     <script src="scrolleranim.js"></script>
   </head>
@@ -21,10 +22,13 @@
                <a class="navbar-brand" href="#">
                     <img src="images/8397.png" alt="Markt Logo" width="200" height="40" class="d-inline-block align-text-top">
                </a>
-               <form class="d-flex gap-2" role="search">
+               <div class="d-flex gap-2" role="search" id="large">
                     <button class="btn btn-sm btn-ss" type="submit">Log In</button>
                     <button class="btn btn-sm btn-out" type="submit">Sign Up</button>
-                  </form>
+               </div>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>              
           </div>
      </nav>
 
@@ -46,13 +50,18 @@
                          <a class="nav-link" href="#">FAQs</a>
                     </li>
                </ul>
+
+               <div class="d-flex gap-2" role="search" id="small">
+                    <button class="btn btn-sm btn-ss" type="submit">Log In</button>
+                    <button class="btn btn-sm btn-out" type="submit">Sign Up</button>
+               </div>
             </div>
           </div>
      </nav>
 
         
-     <div class="container-fluid row px-5 d-flex" id="hero">
-          <div class="text d-flex col-8">
+     <div id="hero" class="container-fluid row px-5 d-flex">
+          <div class="text d-flex col-md-8">
               <div class="text">
                     <div class="h1">
                          Discover a World of Endless Shopping Possibilities!
@@ -63,7 +72,7 @@
               </div>
                <button class="btn btn-lg btn-out get" type="submit">Get Started</button>
           </div>
-          <div class="img1 col-4">
+          <div class="img1 col-md-4">
                <img src="images/smartmockups_ll4doah4-removebg-preview 1.png" alt="phone and tablet view of Markt app">
           </div>
      </div>
@@ -95,8 +104,8 @@
      </section>
 
      <!-- Advert for Download App -->
-     <section class="advert row container-fluid px-5" id="hero">
-          <div class="text col-7">
+     <section id="herond" class="advert d-flex row container-fluid">
+          <div class="text col-md-7">
                <div class="h2">
                     Effortless and convenient shopping at your fingertips...
                </div>
@@ -120,7 +129,7 @@
                     </button>
                </div>
           </div>
-          <div class="col-4 img1">
+          <div class="col-md-4 img1">
                <img src="images/smartmockups_ll79pg0q-removebg-preview 1.png" alt="">
           </div>
      </section>

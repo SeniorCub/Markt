@@ -76,9 +76,11 @@ button{
 
 /* Hero Section */
 #hero{
+     justify-content: center;
      place-items: center;
      background-color: #f9e1dc;
      margin: 0;
+     height: 70vh;
 }
 .text {
      flex-direction: column;
@@ -192,7 +194,6 @@ button{
 }
 
 .hover-content p {
-     left: ;
      padding: 10px;
      font-size: 16px;
      color: black;
@@ -275,6 +276,12 @@ button{
 }
 
 /* Advert to Download App */
+#herond{
+     margin: 0;
+     background-color: #E94C2A;
+     padding: 5%;
+     justify-content: center;
+}
 .h2 {
      font-size: 40px;
      color: #000;
