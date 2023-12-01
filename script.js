@@ -1,18 +1,3 @@
-// const imag = document.querySelector('.card-img-top')
-// const descrip = document.querySelector('.card-text')
-// const cartgo = document.querySelector('.cartgo')
-// const original = document.querySelector('.original')
-
-// fetch('https://fakestoreapi.com/products?limit=5')
-// .then(res=>res.json())
-// .then(data2 => data2.forEach(element => {
-//      imag.src = element.image
-//      descrip.innerText = element.title
-//      cartgo.innerText = element.category
-//      original.innerText = element.price
-// }))
-
-
 fetch('https://fakestoreapi.com/products?limit=12')
 .then (data => data.json())
 .then(data2 => data2.forEach(element => {

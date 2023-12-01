@@ -13,6 +13,12 @@ body {
 }
 
 /* First NavBar */
+.spaced{
+     justify-content: space-between;
+}
+.navbar-toggler, #smalll{
+     display: none!important;
+}
 button{
      padding: 10px;
      padding-left: 30px;

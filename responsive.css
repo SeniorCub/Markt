@@ -10,6 +10,9 @@ color: #000
      #large{
           display: none!important;
      }
+     .navbar-toggler{
+          display: block!important;
+     }
      .nav-item a{
           font-size: 25px;
           padding: 20px 0;
