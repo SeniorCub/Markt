@@ -1,0 +1,32 @@
+.faq-section {
+     max-width: 800px;
+     margin: 50px auto;
+     padding: 20px;
+     background-color: #fff;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+ }
+ .faq-each{
+     padding: 10px;
+     border: 2px solid black;
+ }
+
+ .faq-question {
+     margin-bottom: 15px;
+     cursor: pointer;
+ }
+
+ .faq-answer {
+     display: none;
+     margin-bottom: 20px;
+ }
+
+ .faq-question:hover {
+     color: #4285f4;
+ }
+
+ @media (max-width: 600px) {
+     .faq-section {
+         padding: 15px;
+     }
+ }
