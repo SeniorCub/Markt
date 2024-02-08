@@ -9,7 +9,8 @@
      /* border: 1px solid yellow; */
 }
 body {
-     overflow-x:hidden;
+     overflow-x:hidden!important;
+     width: 100vw;
 }
 
 /* First NavBar */
