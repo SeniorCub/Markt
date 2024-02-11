@@ -1,0 +1,71 @@
+/* Font LInk for Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/* Our Top Deals */
+.dealss {
+     height: 10vh;
+     background-color: #f9e1dc;
+     border-bottom: 1px solid black;
+}
+.deals {
+     padding: 10px 50px;
+     display: flex;
+     justify-content: space-between;
+     place-items: center;
+}
+.top {
+     font-weight: 700;
+     color: #000;
+     font-size: 20px;
+}
+.btt {
+     color: #000;
+     font-size: 15px;
+     font-weight: 700;
+}
+.card {
+     border: none;
+     background-color: #fff;
+     padding: 10px;
+     display: flex;
+     justify-content: space-between;
+}
+.percent {
+     padding: 5px;
+}
+.love {
+     border-radius: 50%;
+     padding: 5px;
+}
+.card-title{
+     justify-content: space-between;
+     place-items: center;
+     align-items: center;
+}
+.card img {
+     width: 100%;
+     height: 200px;
+     object-fit: contain;
+}
+.coll {
+     flex-direction: column;
+}
+.original {
+     color: #E94C2A;
+     text-decoration: line-through;
+}
+.btn-primary {
+     border: none!important;
+     background-color: #E94C2A;
+}
+.btn-primary:hover {
+     color: #E94C2A;
+     background-color: #f9e1dc;
+     border: #E94C2A 1px solid;
+}
+.btn-pri {
+     color: #E94C2A;
+     background-color: #f9e1dc;
+}
