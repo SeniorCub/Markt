@@ -3,12 +3,12 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- CSS Bootstrap Link -->
-     <link rel="stylesheet" href="bootstrap.min.css">
      <!-- Normal CSS Link -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Loading CSS Link -->
      <link rel="stylesheet" href="loading.css">
-     <!-- FavIcon -->
-     <link rel="shortcut icon" href="images/Untitled_logo_1_free-file_1_-removebg-preview.png" type="image/x-icon">
+     <!-- BootStrap CSS Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
      <title>Your Marketplace</title>
 </head>
 <body>
@@ -32,8 +32,6 @@
 
           
           <section>
-               
-            
                 <div class="error-message" id="errorMessage">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"/>
@@ -43,13 +41,39 @@
                     <p>Oops! Something went wrong. Please try again.</p>
                </div>
           </section>
+
+
+
+          <!-- Our Top Deals -->
+          <section class="dealss">
+               <div class="bg- deals">
+                    <div class="top">Our Top Deals</div>
+                    <div class="btn btn-md bg-light btt">Explore  <i class="fa-solid fa-right-to-bracket" style="color: #333;"></i></div>
+               </div>
+
+               <div class="cards p-5 row gap-5 justify-content-center">
+                    
+               </div>
+               
+               <div id="cards" class="p-5 row gap-5 justify-content-center">
+
+               </div>
+               
+               <div class="load">
+                    <div class="loading-text">Loading...</div>
+                    <div class="spinner"></div>
+               </div>
+
+          </section>
      </main>
 
-     <!-- Bootstrap JavaScript Link (if needed) -->
-     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
-     <!-- Font Awesome -->
+     <!-- Font Awsome Link -->
      <script src="https://kit.fontawesome.com/2a49fbdbb8.js" crossorigin="anonymous"></script>
+     <!-- BootStrap Script Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
      <!-- Loading JavaScript Link -->
      <script src="loading.js"></script>
+     <!-- Api JavaScript Link-->
+     <script src="script.js"></script>
 </body>
 </html>
