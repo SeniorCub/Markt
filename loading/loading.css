@@ -93,4 +93,11 @@ body {
      height: 40px;
      color: #ff0000;
  }
- 
+ .loadmore{
+    padding: 10px;
+    border: #333 solid 2px;
+    outline: auto;
+ }
+ aside{
+    display: none!important;
+ }
