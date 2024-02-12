@@ -99,5 +99,16 @@ body {
     outline: auto;
  }
  aside{
-    display: none!important;
+    display: none;
+ }
+ .vv{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 10px;
+ }
+
+ .errmsg{
+     display: none;
  }
