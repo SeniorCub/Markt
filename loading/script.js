@@ -1,7 +1,6 @@
 fetch('https://fakestoreapi.com/products')
 .then (data => data.json())
 .then(data2 => data2.forEach(element => {
-console.log(data2);
 document.querySelector('.cards').innerHTML += `
      <div class="card" style="width: 20rem; height: 30rem;">
           <div class="bon card-title d-flex">
@@ -26,64 +25,64 @@ document.querySelector('.cards').innerHTML += `
 `
 }));
 
-// Function to fetch and render products
-function fetchAndRenderProducts() {
+function fetc() {
      fetch('https://fakestoreapi.com/products')
-     .then(data => data.json())
-     .then(data2 => { data2.forEach(element => {
-          document.querySelector('#cards').innerHTML += `
-          
+     .then (data => data.json())
+     .then(data2 => data2.forEach(element => {
+     document.querySelector('#cards').innerHTML += `
           <div class="card" style="width: 20rem; height: 30rem;">
-          <div class="bon card-title d-flex">
-               <a href="#" class="btn btn-pri percent">${element.rating.rate}</a>
-               <a href="#" class="btn btn-pri love"><i class="fa-regular fa-heart" style="color: #e94c2a;"></i></a>
-          </div>
+               <div class="bon card-title d-flex">
+                    <a href="#" class="btn btn-pri percent">${element.rating.rate}</a>
+                    <a href="#" class="btn btn-pri love"><i class="fa-regular fa-heart" style="color: #e94c2a;"></i></a>
+               </div>
 
-          <img src= ${element.image}>
+               <img src= ${element.image}>
 
-          <div class="card-title  d-flex">
-               <a href="#" class="btn btn-sm btn-pri cartgo">${element.category}</a>
-               <h5 class="original">$${element.price}</h5>
-          </div>
-          
-          <p class="card-text">${element.title}</p>
+               <div class="card-title  d-flex">
+                    <a href="#" class="btn btn-sm btn-pri cartgo">${element.category}</a>
+                    <h5 class="original">$${element.price}</h5>
+               </div>
+               
+               <p class="card-text">${element.title}</p>
 
-          <div class="bon card-title d-flex">
-               <a href="#" class="btn btn-pri">Add to Cart</a>
-               <a href="#" class="btn btn-primary">Buy Now</a>
+               <div class="bon card-title d-flex">
+                    <a href="#" class="btn btn-pri">Add to Cart</a>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+               </div>
           </div>
-     </div>
-          `;
+     `
+     
+     })).catch((err) => {
+          errree()
+          console.log(err);
      });
-     });
 }
 
-// Function to display a loading message or spinner
-function showLoading() {
-     document.querySelector('.load').style.display = 'block';
-}
-
-// Function to hide the loading message or spinner
-function hideLoading() {
-     document.querySelector('.load').style.display = 'none';
-}
-  
-document.querySelector(".loadmore").addEventListener("click", loadmore())
+document.querySelectorAll(".loadmore").forEach(element => {
+     element.addEventListener("click", loadmor);
+} );
+let aside = document.querySelector("aside");
+let load = document.querySelector(".load");
+let errre = document.querySelector(".errmsg");
+let vv = document.querySelector(".vv");
 
 function loadmore() {
-     document.querySelector("aside").style.display="block"
-          // Show loading message or spinner
-          // showLoading();
-    
-          // Fetch and render more products
-          fetchAndRenderProducts()
-          //   .then(() => {
-          //     // Hide loading message or spinner after products are loaded
-          //     hideLoading();
-          //   })
-          //   .catch(error => {
-          //     console.error('Error fetching products:', error);
-          //     // Handle error and hide loading message or spinner
-          //     hideLoading();
-          //   });
+     console.log("clicked");
+     aside.style.display = "block";
+     fetc();
+     document.querySelector(".loadmore").style.display = "none";
+     load.style.display = "none";
 }
+ function loadmor() {
+     if (load.style.display === "none") {
+          load.style.display = "block";
+     } else {
+          load.style.display = "none";
+     }
+     setTimeout(loadmore, 2000);
+ }
+
+ function errree() {
+     errre.style.display = "block";
+     // vv.style.display = "none";
+ }
