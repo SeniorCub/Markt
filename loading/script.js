@@ -23,7 +23,10 @@ document.querySelector('.cards').innerHTML += `
           </div>
      </div>
 `
-}));
+})).catch((err) => {
+     errree()
+     console.log(err);
+});
 
 function fetc() {
      fetch('https://fakestoreapi.com/products')
