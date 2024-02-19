@@ -15,6 +15,12 @@ color: #000
           background-color: #f9e1dc;
           color: #333;
      }
+     #large{
+          display: none!important;
+     }
+     .smallNAv{
+          display: block!important;
+     }
      #hero{
           height: 80vh;
           display: block;
