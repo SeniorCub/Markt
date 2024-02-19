@@ -4,22 +4,22 @@ fetch('https://fakestoreapi.com/products?limit=12')
 document.querySelector('.cards').innerHTML += `
      <div class="card" style="width: 20rem; height: 30rem;">
           <div class="bon card-title d-flex">
-               <a href="#" class="btn btn-pri percent">${element.rating.rate}</a>
-               <a href="#" class="btn btn-pri love"><i class="fa-regular fa-heart" style="color: #e94c2a;"></i></a>
+               <a class="btn btn-pri percent">${element.rating.rate}</a>
+               <a class="btn btn-pri love"><i class="fa-regular fa-heart" style="color: #e94c2a;"></i></a>
           </div>
 
           <img src= ${element.image}>
 
           <div class="card-title  d-flex">
-               <a href="#" class="btn btn-sm btn-pri cartgo">${element.category}</a>
+               <a class="btn btn-sm btn-pri cartgo">${element.category}</a>
                <h5 class="original">$${element.price}</h5>
           </div>
           
           <p class="card-text">${element.title}</p>
 
           <div class="bon card-title d-flex">
-               <a href="#" class="btn btn-pri">Add to Cart</a>
-               <a href="#" class="btn btn-primary">Buy Now</a>
+               <a class="btn btn-pri">Add to Cart</a>
+               <a class="btn btn-primary">Buy Now</a>
           </div>
      </div>
 `
@@ -32,7 +32,7 @@ document.querySelector('.product-display-cont').innerHTML += `
           <div class="product-cont">
                <img src= ${element.image}>
                <div class="hover-content">
-                    <p>${element.title}</p>
+                    <span>${element.title}</span>
                </div>
           </div>
      </div>
