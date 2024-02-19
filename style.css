@@ -20,36 +20,6 @@ body {
 .navbar-toggler, #smalll{
      display: none!important;
 }
-button{
-     padding: 10px;
-     padding-left: 30px;
-     padding-right: 30px;
-     border: hidden;
-     border-radius: 20px;
-     font-weight:700;
-     font-size: large;
-}
-.btn-ss {
-     border: #E94C2A 4px solid;
-     color: #f9e1dc;
-}
-.btn-ss:hover {
-     background-color: #E94C2A;
-     color: #f9e1dc;
-     border-radius: 20px;
-}
-.btn-out,.cta {
-     background-color: #E94C2A;
-     color: #fff;
-}
-.btn-out:hover,.cta:hover {
-     font-weight: 700;
-     border-radius: 20px; 
-}
-.btn-out:hover {
-     background-color: #fff;
-     color: #E94C2A;
-}
 .smallNAv{
      display: none;
 }
@@ -292,16 +262,23 @@ button{
 
 /* Hero Section */
 #hero{
+     display: grid;
+     grid-template-columns: 2fr 1fr;
      justify-content: center;
      place-items: center;
      background-color: #fff;
      margin: 0;
-     height: 70vh;
+     height: 80vh;
+}
+.ftext{
+     flex-direction: column;
+     align-items: center;
+     gap: 50px;
 }
 .text {
      flex-direction: column;
      align-items: center;
-     gap: 50px; 
+     gap: 20px; 
 }
 .h1 {
      color: #E94C2A;
@@ -317,20 +294,67 @@ button{
      font-weight: 400;
      line-height: normal;
      letter-spacing: 0.4px;
-     text-align: justify;
-}
-.get {
-     width: 200px;
-     height: 66.048px;
-     border-radius: 20px;
-}
-.get:hover {
-     border: 2px #E94C2A solid;
+     text-align: center;
 }
 .img1 img {
      width: 100%;
      height: 100%;
 }
+
+.cssbuttons-io-button {
+     background: #E94C2A;
+     color: white;
+     font-family: inherit;
+     padding: 0.3em;
+     padding-left: 1.2em;
+     font-size: 20px;
+     font-weight: 500;
+     border-radius: 0.9em;
+     border: none;
+     letter-spacing: 0.05em;
+     display: flex;
+     align-items: center;
+     box-shadow: inset 0 0 1.6em -0.6em #f9e1dc;
+     overflow: hidden;
+     position: relative;
+     height: 3.5em;
+     padding-right: 3.3em;
+     cursor: pointer;
+   }
+   
+   .cssbuttons-io-button .icon {
+     background: #f9e1dc;
+     margin-left: 1em;
+     position: absolute;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 2.2em;
+     width: 2.2em;
+     border-radius: 0.7em;
+     box-shadow: 0.1em 0.1em 0.6em 0.2em #E94C2A;
+     right: 0.3em;
+     transition: all 0.3s;
+   }
+   
+   .cssbuttons-io-button:hover .icon {
+     width: calc(100% - 0.6em);
+   }
+   
+   .cssbuttons-io-button .icon svg {
+     width: 1.1em;
+     transition: transform 0.3s;
+     color: #E94C2A;
+   }
+   
+   .cssbuttons-io-button:hover .icon svg {
+     transform: translateX(0.1em);
+   }
+   
+   .cssbuttons-io-button:active .icon {
+     transform: scale(0.95);
+   }
+   
 
 /* Section of Boxes */
 .section{
@@ -376,7 +400,7 @@ button{
 }
 
 .disp-cont-for-two {
-     transform: rotate(320deg);
+     transform: rotate(30deg);
      margin: 20px;
 }
 
@@ -491,6 +515,68 @@ button{
      color: #E94C2A;
      background-color: #fff;
 }
+.CartBtn {
+     height: 40px;
+     border-radius: 12px;
+     border: none;
+     background-color: #E94C2A;
+     cursor: pointer;
+     transition-duration: .5s;
+     overflow: hidden;
+     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   
+   .IconContainer {
+     position: absolute;
+     left: -50px;
+     width: 30px;
+     height: 30px;
+     background-color: transparent;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+     z-index: 2;
+     transition-duration: .5s;
+   }
+   
+   .icon {
+     border-radius: 1px;
+   }
+   
+   .text {
+     height: 100%;
+     width: fit-content;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: rgb(17, 17, 17);
+     z-index: 1;
+     transition-duration: .5s;
+     font-size: 1.04em;
+     font-weight: 600;
+   }
+   
+   .CartBtn:hover .IconContainer {
+     transform: translateX(58px);
+     border-radius: 40px;
+     transition-duration: .5s;
+   }
+   
+   .CartBtn:hover .text {
+     transform: translate(10px,0px);
+     transition-duration: .5s;
+   }
+   
+   .CartBtn:active {
+     transform: scale(0.95);
+     transition-duration: .5s;
+   }
 
 /* Advert to Download App */
 #herond{
@@ -498,6 +584,8 @@ button{
      background-color: #E94C2A;
      padding: 5%;
      justify-content: center;
+     display: grid;
+     grid-template-columns: 2fr 1fr;
 }
 .h2 {
      font-size: 40px;
@@ -506,35 +594,53 @@ button{
 .p {
      font-size: 15px;
 }
-.down{
-     background-color: #000;
-     display: flex;
-     place-items: center;
-     line-height: 0%;
-     gap: 10px;
-     color: #fff;
-     min-width: max-content;
-     margin: 0;
-}
-.down:hover{
-     border: #000 2px solid;
-     color: #000;
-}
-.d-{
-     display: flex;
-     flex-direction: column;
-     align-items: baseline;
-}
-.d- h6 {
-     margin: 0;
-     font-size: 0.9rem;
-     font-weight: medium;
-}
 .coversall{
      width: max-content;
      padding: 1.5rem;
      padding-left: 0;
 }
+.playstore-button {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     border: 2px solid #000;
+     border-radius: 9999px;
+     background-color: rgba(0, 0, 0, 1);
+     padding: 0.625rem 1.5rem;
+     text-align: center;
+     color: rgba(255, 255, 255, 1);
+     outline: 0;
+     transition: all  .2s ease;
+     text-decoration: none;
+   }
+   
+   .playstore-button:hover {
+     background-color: transparent;
+     color: rgba(0, 0, 0, 1);
+   }
+   
+   .icon {
+     height: 1.5rem;
+     width: 1.5rem;
+   }
+   
+   .texts {
+     margin-left: 1rem;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     line-height: 1;
+   }
+   
+   .text-1 {
+     margin-bottom: 0.25rem;
+     font-size: 0.75rem;
+     line-height: 1rem;
+   }
+   
+   .text-2 {
+     font-weight: 600;
+   }
 
 /* Second hero at the bottom */
 .sec-hero-cont{
@@ -601,25 +707,87 @@ button{
 .subscribe .h1 {
      font-size: 30px;
 }
-#sub-mail {
+.mail{
+     width: 100%;
+     text-align: center;
+}
+.input__email {
+     width: 20%;
+     padding: 10px;
+     font-size: 12px;
+     box-shadow: 0 0 0 1px #E94C2A;
+     border: none;
+     border-radius: 25px;
+     background-color: #f9e1dc;
+     transition: all .3s;
+   }
+   
+   .input__email::placeholder {
+     color: #E94C2A;
+     font-weight: 900;
+     font-size: 14px;
+   }
+   
+   .input__email:focus {
+     outline: none;
+     box-shadow: 0 0 10px 1px #E94C2A;
+     border: none;
+     transition: all .3s;
+   }
+   
+.button {
+     height: 35px;
+     width: 150px;
+     border: none;
      border-radius: 10px;
-     border: #E94C2A 1px solid;
-     outline: #E94C2A 1px solid;
-     background-color: #fff;
-     color: #000;
-}
-#sub-scribe {
-     border: #333 2px solid;
-     outline:none;
-     padding: 0 10px;
-     font-weight: 500;
-     background-color: #E94C2A;
-}
-#sub-scribe:hover {
-     border: #E94C2A 2px solid;
-     background-color: #fff;
-     color: #333;
-}
+     cursor: pointer;
+     position: relative;
+     overflow: hidden;
+     transition: all 0.5s ease-in-out;
+   }
+   
+   .button:hover {
+     box-shadow: .5px .5px 150px #252525;
+   }
+   
+   .type1::after {
+     content: "THANK YOU";
+     height: 35px;
+     width: 150px;
+     background-color: #4617ec;
+     color: #fff;
+     transform: translateY(100px);
+     font-size: 1.2rem;
+     font-weight: 700;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: 0.5s;
+   }
+   
+   .type1::before {
+     content: "SUBSCRIBE";
+     height: 35px;
+     width: 150px;
+     background-color: rgb(240, 9, 9);
+     color: #f5f8f8;
+     position: absolute;
+     transform: translateY(0px) scale(1.1);
+     font-size: 1.2rem;
+     font-weight: 900;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: 0.5s;
+   }
+   
+   .type1:hover::after {
+     transform: translateY(-2px) scale(1.2) rotate(0deg);
+   }
+   
+   .type1:hover::before {
+     transform: translateY(-50px)  rotate(290deg);
+   }
 
 /* Footer */
 footer {
