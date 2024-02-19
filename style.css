@@ -754,7 +754,7 @@ body {
      content: "THANK YOU";
      height: 35px;
      width: 150px;
-     background-color: #4617ec;
+     background-color: #252525;
      color: #fff;
      transform: translateY(100px);
      font-size: 1.2rem;
@@ -769,7 +769,7 @@ body {
      content: "SUBSCRIBE";
      height: 35px;
      width: 150px;
-     background-color: rgb(240, 9, 9);
+     background-color: #E94C2A;
      color: #f5f8f8;
      position: absolute;
      transform: translateY(0px) scale(1.1);
