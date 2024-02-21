@@ -4,14 +4,14 @@ fetch('https://fakestoreapi.com/products?limit=12')
 document.querySelector('.cards').innerHTML += `
      <div class="card" style="width: 20rem; height: 30rem;">
           <div class="bon card-title d-flex">
-               <a class="btn btn-pri percent">${element.rating.rate}</a>
-               <a class="btn btn-pri love"><i class="fa-regular fa-heart" style="color: #e94c2a;"></i></a>
+               <div class="btn btn-pri percent">${element.rating.rate}</div>
+               <div class="btn btn-pri love"><i class="fa-regular fa-heart" style="color: #e94c2a;"></i></div>
           </div>
 
           <img src= ${element.image}>
 
           <div class="card-title  d-flex">
-               <a class="btn btn-sm btn-pri cartgo">${element.category}</a>
+               <div class="btn btn-sm btn-pri cartgo">${element.category}</div>
                <h5 class="original">$${element.price}</h5>
           </div>
           
@@ -41,24 +41,36 @@ document.querySelector('.product-display-cont').innerHTML += `
 `
 }));
 
-function toggleTheme() {
-     const body = document.body;
-     const currentTheme = body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
-     const newTheme = currentTheme === 'dark-mode' ? 'light-mode' : 'dark-mode';
- 
-     body.classList.remove(currentTheme);
-     body.classList.add(newTheme);
- 
-     // Save the user's preference to local storage
-     localStorage.setItem('theme', newTheme);
-   }
- 
-   // Event listener for the theme toggle checkbox
-   const themeToggle = document.getElementById('theme');
-   themeToggle.addEventListener('change', toggleTheme);
- 
-   // Check the user's preference from local storage and apply it
-   const savedTheme = localStorage.getItem('theme');
-   if (savedTheme) {
-     document.body.classList.add(savedTheme);
-   }
+let thee = document.querySelector('#theme');
+let hero = document.querySelector('#hero');
+let heroP = document.querySelector('#hero .p');
+let secBox = document.querySelector('.section');
+let firstSecHead = document.querySelector('#first-section-heading');
+let dealss = document.querySelector('.dealss');
+let cards = document.querySelectorAll('.card');
+
+document.querySelector('.theme').addEventListener('click', () => {
+     if (thee.checked == true) {
+          console.log("clicked");
+          hero.style.backgroundColor = "#101010";
+          heroP.style.color = "#f1f1f1";
+          secBox.style.backgroundColor = "#101010";
+          firstSecHead.style.color = "#f1f1f1";
+          dealss.style.backgroundColor = "#101010";
+          cards.forEach(card => {
+               card.style.backgroundColor = "#101010";
+               card.style.color = "#f1f1f1";
+          });
+     } else {
+          console.log("not clicked");
+          hero.style.backgroundColor = "#f1f1f1";
+          heroP.style.color = "#000";
+          secBox.style.backgroundColor = "#f1f1f1";
+          firstSecHead.style.color = "#000";
+          dealss.style.backgroundColor = "#f1f1f1";
+          cards.forEach(card => {
+               card.style.backgroundColor = "#f1f1f1";
+               card.style.color = "#000";
+          });
+     }
+})

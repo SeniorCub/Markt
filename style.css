@@ -23,7 +23,9 @@ body {
 .smallNAv{
      display: none;
 }
-
+.bg-dar {
+     background-color: #101010!important;
+}
 /* Night mood icon */
 .theme {
      display: flex;
@@ -58,8 +60,8 @@ body {
    
    .theme__icon {
      display: block;
-     top: 0.6em;
-     left: 0.6em;
+     top: 0.1em;
+     left: 0.3em;
      width: 1.5em;
      height: 1.5em;
    }
@@ -85,7 +87,7 @@ body {
      transform: rotate(0deg) translateY(0.5em);
      transform-origin: 50% 0;
      width: 0.1em;
-     height: 0.2em;
+     height: 0.1em;
    }
    
    .theme__icon-part:nth-child(3) {
@@ -132,8 +134,8 @@ body {
      border-radius: 25% / 50%;
      box-shadow: 0 0 0 0.125em var(--primaryT);
      padding: 0.25em;
-     width: 6em;
-     height: 3em;
+     width: 5em;
+     height: 2em;
      -webkit-appearance: none;
      appearance: none;
      transition: background-color var(--transDur) ease-in-out,
@@ -145,8 +147,8 @@ body {
      background-color: hsl(48,90%,55%);
      border-radius: 50%;
      content: "";
-     width: 2.5em;
-     height: 2.5em;
+     width: 2em;
+     height: 1.5em;
      transition: 0.3s;
    }
    
@@ -266,7 +268,7 @@ body {
      grid-template-columns: 2fr 1fr;
      justify-content: center;
      place-items: center;
-     background-color: #fff;
+     background-color: #f1f1f1;
      margin: 0;
      height: 80vh;
 }
@@ -356,12 +358,12 @@ body {
    }
    
 
-/* Section of Boxes */
+/* Section of moving Boxes */
 .section{
      display: flex;
      align-items: center;
      justify-content: center;
-     background-color: #fff;
+     background-color: #f1f1f1;
 }
 .first{
      height: 80vh;
@@ -451,7 +453,7 @@ body {
 /* Our Top Deals */
 .dealss {
      /* height: 100vh; */
-     background-color: #fff;
+     background-color: #f1f1f1;
      border-bottom: 1px solid black;
 }
 .deals {
@@ -500,7 +502,6 @@ body {
 }
 .original {
      color: #E94C2A;
-     text-decoration: line-through;
 }
 .btn-primary {
      /* border: none!important; */
@@ -508,12 +509,12 @@ body {
 }
 .btn-primary:hover {
      color: #E94C2A;
-     background-color: #fff;
+     background-color: #f1f1f1;
      border: #E94C2A 1px solid;
 }
 .btn-pri {
      color: #E94C2A;
-     background-color: #fff;
+     background-color: #f1f1f1;
 }
 .CartBtn {
      height: 40px;
@@ -563,7 +564,7 @@ body {
    }
    
    .CartBtn:hover .IconContainer {
-     transform: translateX(58px);
+     transform: translateX(100px);
      border-radius: 40px;
      transition-duration: .5s;
    }
@@ -646,7 +647,7 @@ body {
 .sec-hero-cont{
      position: relative;
      height: 80vh;
-     background-color: #fff;
+     background-color: #f1f1f1;
 }
 .floaters{
      position: absolute;
@@ -755,7 +756,7 @@ body {
      height: 35px;
      width: 150px;
      background-color: #252525;
-     color: #fff;
+     color: #f1f1f1;
      transform: translateY(100px);
      font-size: 1.2rem;
      font-weight: 700;
@@ -801,11 +802,11 @@ footer {
 }
 a {
      text-decoration: none;
-     color: #fff;
+     color: #f1f1f1;
      font-size: 20px;
 }
 .copy {
-     color: #fff;
+     color: #f1f1f1;
      display: flex;
      flex-direction: column;
      justify-content: center;
