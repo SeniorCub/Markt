@@ -47,9 +47,10 @@ let heroP = document.querySelector('#hero .p');
 let secBox = document.querySelector('.section');
 let firstSecHead = document.querySelector('#first-section-heading');
 let dealss = document.querySelector('.dealss');
-let cards = document.querySelectorAll('.card');
+let caa = document.querySelector('.card');
 
-document.querySelector('.theme').addEventListener('click', () => {
+document.querySelector('.theme').addEventListener('click', change) 
+function change() {
      if (thee.checked == true) {
           console.log("clicked");
           hero.style.backgroundColor = "#101010";
@@ -57,10 +58,6 @@ document.querySelector('.theme').addEventListener('click', () => {
           secBox.style.backgroundColor = "#101010";
           firstSecHead.style.color = "#f1f1f1";
           dealss.style.backgroundColor = "#101010";
-          cards.forEach(card => {
-               card.style.backgroundColor = "#101010";
-               card.style.color = "#f1f1f1";
-          });
      } else {
           console.log("not clicked");
           hero.style.backgroundColor = "#f1f1f1";
@@ -68,9 +65,5 @@ document.querySelector('.theme').addEventListener('click', () => {
           secBox.style.backgroundColor = "#f1f1f1";
           firstSecHead.style.color = "#000";
           dealss.style.backgroundColor = "#f1f1f1";
-          cards.forEach(card => {
-               card.style.backgroundColor = "#f1f1f1";
-               card.style.color = "#000";
-          });
      }
-})
+}
