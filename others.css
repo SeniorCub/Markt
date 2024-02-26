@@ -6,24 +6,27 @@
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
      border-radius: 10px;
  }
- /* .faq-each{
+ .faq-each{
      padding: 10px;
-     border: 2px solid black  ;
  }
 
  .faq-question {
-     margin-bottom: 15px;
+     border: #333 2px solid;
+     padding: 5px;
      cursor: pointer;
  }
 
+ .faq-answer a{
+     color: black;
+}
  .faq-answer {
      display: none;
-     margin-bottom: 20px;
+     /* margin-bottom: 20px; */
  }
 
  .faq-question:hover {
      color: #4285f4;
- } */
+ }
 
  #conactUs{
      height: 90vh;
