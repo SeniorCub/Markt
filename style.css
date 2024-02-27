@@ -478,7 +478,6 @@ body {
      padding: 10px;
      display: flex;
      justify-content: space-between;
-     box-shadow: #f9e1dc 10px -10px 10px;
 }
 .percent {
      padding: 5px;
@@ -529,6 +528,7 @@ body {
      display: flex;
      align-items: center;
      justify-content: center;
+     color: #f1f1f1;
    }
    
    .IconContainer {
@@ -544,8 +544,11 @@ body {
      overflow: hidden;
      z-index: 2;
      transition-duration: .5s;
+     color: #f1f1f1;
    }
-   
+   path{
+     color: #fff;
+   }
    .icon {
      border-radius: 1px;
    }
@@ -556,7 +559,7 @@ body {
      display: flex;
      align-items: center;
      justify-content: center;
-     color: rgb(17, 17, 17);
+     color: #f1f1f1;
      z-index: 1;
      transition-duration: .5s;
      font-size: 1.04em;
@@ -597,8 +600,7 @@ body {
 }
 .coversall{
      width: max-content;
-     padding: 1.5rem;
-     padding-left: 0;
+     /* padding: 1.5rem; */
 }
 .playstore-button {
      display: inline-flex;
