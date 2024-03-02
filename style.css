@@ -328,11 +328,11 @@ body {
 
 /* Section of moving Boxes */
 .section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f1f1f1;
-  margin-top: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #f1f1f1;
+     margin-top: 30px;
 }
 .first {
   height: 80vh;
@@ -434,6 +434,10 @@ body {
      justify-content: space-between;
      align-items: center;
      width: 100%;
+}
+#productOfDay h1.no-offer{
+     font-size: 50px;
+     margin: 0 auto;
 }
 #ProductDayItems{
      display: flex;

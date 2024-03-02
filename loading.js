@@ -4,7 +4,7 @@ function delay(milliseconds) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("https://fakestoreapi.com/products?limit=12")
+  fetch("https://fakestoreapi.com/products?limit=20")
     .then((data) => data.json())
     .then((data2) =>
       data2.forEach((element) => {
