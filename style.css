@@ -225,6 +225,7 @@ body {
   width: 100%;
   z-index: 2;
   height: 10vh;
+  padding-right: 50px;
 }
 .navbar a {
   color: #fff;
@@ -785,7 +786,7 @@ body {
   min-width: 200px;
   max-width: 250px;
 }
-.boos:hover {
+.boos:hover, .card-three {
   box-shadow: rgba(0, 0, 0, 0.35) 15px 15px 5px;
 }
 
@@ -921,16 +922,19 @@ span > h4 {
 
 /* Footer */
 footer {
-  /* border-radius: 50px 50px 0 0;  */
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 0;
+  gap: 20px;
 }
-.lists {
-     width: 100vw;
+footer .lists {
      display: flex;
-     gap: 30px;
      list-style: none;
 }
-a {
+footer a {
   text-decoration: none;
   color: #f1f1f1;
   font-size: 20px;
@@ -942,3 +946,80 @@ a {
   justify-content: center;
   place-items: center;
 }
+footer .coversall{
+     margin: auto;
+}
+
+footer .card {
+     width: fit-content;
+     height: fit-content;
+     background-color: rgb(238, 238, 238);
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: center;
+     padding: 25px 25px;
+     gap: 20px;
+     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+   }
+   
+   /* for all social containers*/
+   footer .socialContainer {
+     width: 52px;
+     height: 52px;
+     background-color: rgb(44, 44, 44);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+     transition-duration: .3s;
+   }
+   /* instagram*/
+   footer .containerOne:hover {
+     background-color: #d62976;
+     transition-duration: .3s;
+   }
+   /* twitter*/
+   footer .containerTwo:hover {
+     background-color: #00acee;
+     transition-duration: .3s;
+   }
+   /* linkdin*/
+   footer .containerThree:hover {
+     background-color: #0072b1;
+     transition-duration: .3s;
+   }
+   /* Whatsapp*/
+   footer .containerFour:hover {
+     background-color: #128C7E;
+     transition-duration: .3s;
+   }
+   
+   footer .socialContainer:active {
+     transform: scale(0.9);
+     transition-duration: .3s;
+   }
+   
+  footer .socialSvg {
+     width: 17px;
+   }
+   
+  footer .socialSvg path {
+     fill: rgb(255, 255, 255);
+   }
+   
+  footer .socialContainer:hover .socialSvg {
+     animation: slide-in-top 0.3s both;
+   }
+   
+   @keyframes slide-in-top {
+     0% {
+       transform: translateY(-50px);
+       opacity: 0;
+     }
+   
+     100% {
+       transform: translateY(0);
+       opacity: 1;
+     }
+   } 

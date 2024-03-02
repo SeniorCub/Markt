@@ -4,8 +4,6 @@ const countDownDisplay = document.getElementById("countdown");
 let countdownTime = 1 * 60 * 60; // 1 hours
 const countdownDate = new Date().getTime() + countdownTime * 1000;
 
-setInterval(count, 1000);
-
 function count() {
   const now = new Date().getTime();
   const distance = countdownDate - now;
@@ -21,3 +19,5 @@ function count() {
     countDownDisplay.innerHTML = `${hours}:${minutes}:${seconds}`;
   }
 }
+
+setInterval(count, 1000);
