@@ -94,5 +94,8 @@ color: #000
           position: absolute;
           z-index: 1;
      }
-     /* Need responsivness for the footer and the scolling images */
+     #productOfDay {
+          width: 300%;
+          animation: autoslideshow 5s infinite linear forwards;
+     }
 }
