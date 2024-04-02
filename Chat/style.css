@@ -34,6 +34,7 @@
    }
    
    .msger {
+     position: relative;
      display: flex;
      flex-flow: column wrap;
      justify-content: space-between;
@@ -160,12 +161,17 @@
      background-image: url("Screenshot_from_2023-10-03_01-04-59-removebg-preview.png");
    }
    
- /* .emoji-tray {
+ .emoji-tray {
      display: flex;
      flex-wrap: wrap;
+     position: absolute;
+     bottom: 17vh;
      gap: 10px;
+     right: 10%;
      padding: 20px;
-     background-color: #fff;
+     background-color: #e94d2a8f;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
      border-radius: 10px;
      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
      display: none;
@@ -184,19 +190,8 @@
  .emoji:hover {
      background-color: #ddd;
  }
- 
- @media (max-width: 768px) {
-     .emoji-tray {
-         padding: 10px;
-     }
- 
-     .emoji {
-         font-size: 20px;
-         padding: 8px 16px;
-     }
- }
  .visible {
-     display: block !important;
+     display: grid!important;
  }
  
  #toggleEmojiTray {
@@ -209,7 +204,3 @@
      cursor: pointer;
      margin-bottom: 20px;
  }
- 
- #toggleEmojiTray:hover {
-     background-color: #0056b3;
- } */
