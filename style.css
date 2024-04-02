@@ -953,50 +953,24 @@ footer .coversall{
 footer .card {
      width: fit-content;
      height: fit-content;
-     background-color: rgb(238, 238, 238);
      display: flex;
      align-items: center;
      flex-direction: row;
      justify-content: center;
      padding: 25px 25px;
+     background: none;
      gap: 20px;
-     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
    }
    
    /* for all social containers*/
    footer .socialContainer {
      width: 52px;
      height: 52px;
-     background-color: rgb(44, 44, 44);
      display: flex;
      align-items: center;
      justify-content: center;
      overflow: hidden;
-     transition-duration: .3s;
-   }
-   /* instagram*/
-   footer .containerOne:hover {
-     background-color: #d62976;
-     transition-duration: .3s;
-   }
-   /* twitter*/
-   footer .containerTwo:hover {
-     background-color: #00acee;
-     transition-duration: .3s;
-   }
-   /* linkdin*/
-   footer .containerThree:hover {
-     background-color: #0072b1;
-     transition-duration: .3s;
-   }
-   /* Whatsapp*/
-   footer .containerFour:hover {
-     background-color: #128C7E;
-     transition-duration: .3s;
-   }
-   
-   footer .socialContainer:active {
-     transform: scale(0.9);
+     background-color: #e94c2a;
      transition-duration: .3s;
    }
    
