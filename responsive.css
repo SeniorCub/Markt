@@ -1,11 +1,3 @@
-/* 
-color: #000
-     #333
-     #E94C2A
-     #f9e1dc
-     #fff;
-*/
-
 @media (max-width: 670px) {
      .nav-item a{
           font-size: 25px;
@@ -60,7 +52,7 @@ color: #000
      }
      .product-display-cont {
           animation: autoslideshow 10s infinite linear forwards;
-          /* overflow-x: hidden!important; */
+          overflow-x: hidden!important;
      }
      .card{
           width: 15rem!important;
@@ -75,12 +67,7 @@ color: #000
           position: relative;
           height: 80vh;
           display: block;
-          /* grid-template-rows: 1fr 1fr; */
           justify-content: center;
-          /* background-image: url(images/smartmockups_ll79pg0q-removebg-preview\ 1.png);
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center; */
      }
      #herond .text .h2{
           font-size: 50px;
@@ -96,6 +83,61 @@ color: #000
      }
      #productOfDay {
           width: 300%;
-          animation: autoslideshow 5s infinite linear forwards;
+          #ProductDayItems{
+          animation: autoslideshows 10s infinite linear forwards;
      }
+     }
+     #herond {
+          height: max-content!important;
+          background-color: #f9e1dc!important;
+     }
+     #herond .img1 {
+          position: initial!important;
+          img{
+               width: 100%;
+               height: 100%;
+          }
+     }
+     .main-img {
+          max-width: max-content;
+          z-index: 0;
+          left: -10% !important;
+          top: 20%;
+      }
+      .card-one {
+          left: 0%;
+      }
+      .card-three {
+          right: 0;
+      }
+      .mail{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+      }
+      .input__email {
+          width: 80%;
+      }
+      .par{
+          width: 90%;
+      }
+      footer{
+          .lists{
+               flex-wrap: wrap;
+               justify-content: center;
+          }
+          .card {
+               width: 15rem !important;
+               height: max-content !important;
+           }
+           .row{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+           }
+      }
 }
+

@@ -6,7 +6,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  /* border: 1px solid yellow; */
 }
 body {
   background-color: #f4f4f4;
@@ -425,6 +424,14 @@ body {
     transform: translate(calc(-50% - 0.5rem));
   }
 }
+@keyframes autoslideshows {
+     from {
+       transform: translate(60px);
+     }
+     to {
+       transform: translate(calc(-90% - 9rem));
+     }
+   }
  /* Product of the Day */
 #productOfDay{
      height: 15vh;
@@ -670,7 +677,7 @@ body {
 
 .text {
   height: 100%;
-  width: fit-content;
+  width: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -951,8 +958,8 @@ footer .coversall{
 }
 
 footer .card {
-     width: fit-content;
-     height: fit-content;
+     width: max-content;
+     height: max-content;
      display: flex;
      align-items: center;
      flex-direction: row;
