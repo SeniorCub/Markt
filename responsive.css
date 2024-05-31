@@ -1,4 +1,8 @@
-@media (max-width: 670px) {
+@media (max-width: 800px) {
+     body{
+          overflow: hidden!important;
+          width: 100vw;
+     }
      .nav-item a{
           font-size: 25px;
           padding: 20px 0;
@@ -51,9 +55,16 @@
           padding: 0px;
      }
      .product-display-cont {
-          animation: autoslideshow 10s infinite linear forwards;
-          overflow-x: hidden!important;
+          animation: autoslideshowss 5s infinite linear forwards;
      }
+     @keyframes autoslideshowss {
+          from {
+            transform: translate(-50px);
+          }
+          to {
+            transform: translate(calc(-250% - 0.5rem));
+          }
+        }
      .card{
           width: 15rem!important;
           height: 25rem!important;
@@ -68,35 +79,40 @@
           height: 80vh;
           display: block;
           justify-content: center;
-     }
-     #herond .text .h2{
-          font-size: 50px;
-          text-align: center;
-     }
-     #herond .text .p{
-          font-size: 35px;
-          color: black;
-     }
-     #herond .img1 {
-          position: absolute;
-          z-index: 1;
-     }
-     #productOfDay {
-          width: 300%;
-          #ProductDayItems{
-          animation: autoslideshows 10s infinite linear forwards;
-     }
-     }
-     #herond {
-          height: max-content!important;
-          background-color: #f9e1dc!important;
-     }
-     #herond .img1 {
-          position: initial!important;
-          img{
+          background-color: transparent;
+          .col-6{
+               width: 100%;
+               padding: 10%;
+          }
+          .h2{
+               font-size: 50px;
+               text-align: center;
+          }
+          .p{
+               font-size: 35px;
+               color: black;
+          }
+          .img1 {
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: -1;
+               background-color: #e94c2a;
                width: 100%;
                height: 100%;
+               opacity: 0.8;
+               img{
+                    width: 100%;
+                    height: 100%;
+               }
           }
+     }
+     #productOfDay {
+          
+          #ProductDayItems{
+          width: 300%;
+          animation: autoslideshows 10s infinite linear forwards;
+     }
      }
      .main-img {
           max-width: max-content;
@@ -140,4 +156,3 @@
            }
       }
 }
-
