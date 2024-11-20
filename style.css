@@ -95,6 +95,17 @@ body {
      --rotateX: -90deg;
      }
      .boxes .box > div:nth-child(4) {
+          justify-content: center;
+          text-align: center;
+          background-color: #0000005e;
+          padding: 20px;
+        }
+        .carousel-caption h5{
+             font-size: 30px;
+             font-weight: 900;
+        }
+        .carousel-caption p{
+             font-siz
      --background: #e94d2a52;
      --top: 0;
      --left: 0;
@@ -556,6 +567,12 @@ body {
 .dealss {
   /* height: 100vh; */
   background-color: #f1f1f1;
+  height: 100%;
+  object-fit: cover;
+}
+#productDayTitle{
+  font-weight: 700;
+  font-size: 25px;
   border-bottom: 1px solid black;
 }
 .bg- {
