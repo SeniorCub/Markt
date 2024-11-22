@@ -67,17 +67,19 @@
                     </div>
                     <ul class="p-0 font-medium borderrounded md:space-x-3 rtl:space-x-reverse flex space-x-5 justify-center mt-0 md:border-0 border-gray-700 items-center mx-2">
                          <li>
-                              <a href="#" class="block rounded-0">
+                              <a href="#" class="block rounded:p-0">
                                    <i class="fa-regular fa-heart"></i>
                               </a>
                          </li>
                          <li>
-                              <a href="#" class="block rounded-0">
-                                   <i class="fa-regular fa-cart-shopping"></i>
+                              <a href="#" class="block rounded:p-0">
+                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                                   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                   </svg>
                               </a>
                          </li>
                          <li>
-                              <a href="#" class="block rounded-0">
+                              <a href="#" class="text-secWhite p-0 bg-secRed w-7 h-7 flex justify-center items-center rounded-full">
                                    <i class="fa-regular fa-user"></i>                            
                               </a>
                          </li>
@@ -96,14 +98,14 @@
                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                          </svg>
                          </div>
-                         <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm border border-gray-300 rounded bg-gray-50 focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+                         <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm border-none rounded bg-gray-50 focus:ring-secRed focus:border-secRed  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-secRed dark:focus:border-secRed" placeholder="Search...">
                     </div>
                     <ul class="flex flex-col p-4 md:p-0 mt-4 font-normal borderrounded md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-gray-700">
                          <li>
                          <a href="#" class="block py-2 px-3 md:p-0">Home</a>
                          </li>
                          <li>
-                         <a href="#" class="block py-2 px-3 md:p-0">Contact</a>
+                         <a href="#" class="block py-2 px-3 md:p-0 border-gray-800 border-b" aria-current="page">Contact</a>
                          </li>
                          <li>
                          <a href="#" class="block py-2 px-3 md:p-0">About</a>
@@ -116,27 +118,59 @@
           </div>
      </nav>
 
-     <header>
+     <header class="flex justify-between items-center container">
           <!-- Breadcrumb -->
-          <nav class="md:px-[4rem] p-[2rem] md:pt-[4rem] md:pb-[2rem] flex justify-between" aria-label="Breadcrumb">
-               <ol class="inline-flex items-center mb-3 sm:mb-0">
+          <nav class="flex justify-between" aria-label="Breadcrumb">
+               <ol class="inline-flex items-center">        
                     <li>
                          <a href="#" class="text-gray-400 hover:text-gray-500">Home</a>
                     </li>
                     <span class="mx-2 text-gray-400">/</span>
                     <li aria-current="page">
-                         <a href="#" class="text-gray-900 hover:text-gray-500">404 Error</a>
+                         <a href="#" class="text-gray-900 hover:text-gray-500">Contact</a>
                     </li>
                </ol>
           </nav>
-
-          <div class="container h-[60vh] flex-col justify-center items-center space-y-5 text-center">
-               <h1 class="md:text-9xl text-6xl font-bold">404 <br class="block md:hidden"> Not Found</h1>
-               <p class="text-lg font-light py-5">Your visited page not found. You may go home page.</p>
-               <a href="#" class="bg-secRed px-10 py-3 rounded text-secWhite text-sm">Back to home page</a>
-          </div>
-          
      </header>
+
+     <div class="md:px-[4rem] px-[2rem] pb-[4rem] md:flex justify-center items-center md:h-[75vh] gap-6">
+          <div class="h-full basis-3/12 flex-col space-y-10 justify-start items-start shadoww p-6 text-sm">
+               <div class="flex-col space-y-4">
+                    <div class="text-lg font-medium mb-4 flex items-center gap-4">
+                         <div class="text-secWhite p-0 bg-secRed w-7 h-7 flex justify-center items-center rounded-full"> <i class="fa fa-phone" aria-hidden="true"></i> </div>
+                         <div>Call To Us</div>
+                    </div>
+                    <p>We are available 24/7, 7 days a week.</p>
+                    <p>Phone: +8801611112222</p>
+               </div>
+               <div class="border-gray-800 border-t pt-8 flex-col space-y-4">
+                    <div class="text-lg font-medium mb-4 flex items-center gap-4">
+                         <div class="text-secWhite p-0 bg-secRed w-7 h-7 flex justify-center items-center rounded-full"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
+                         <div>Write To US</div>
+                    </div>
+                    <p>Fill out our form and we will contact you within 24 hours.</p>
+                    <p>Email: customer@markt.com</p>
+                    <p>Email: support@markt.com</p>
+               </div>         
+          </div>
+          <div class="h-full md:basis-9/12 md:p-12 p-6 shadoww ">
+               <div class="">
+                    <form>
+                         <div class="grid gap-6 md:grid-cols-3 mb-6">
+                              <input type="text" id="first_name" class="bg-gray-100 border-none text-gray-900 text-base  rounded focus:ring-secRed focus:border-secRed block w-full p-4" placeholder="Your Yame" required />
+                              <input type="email" id="email" class="bg-gray-100 border-none text-gray-900 text-base      rounded focus:ring-secRed focus:border-secRed block w-full p-4" placeholder="Your Email" required />
+                              <input type="tel" id="phone" class="bg-gray-100 border-none text-gray-900 text-base   rounded focus:ring-secRed focus:border-secRed block w-full p-4" placeholder="Your Phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
+                         </div>
+                         <div class="mb-6">
+                              <textarea id="message" rows="6" class="bg-gray-100 border-none text-gray-900 text-base     rounded focus:ring-secRed focus:border-secRed block w-full p-4 resize-none" placeholder="Your Message"></textarea>
+                         </div> 
+                         <div class="flex justify-end mb-6">
+                              <button type="submit" class="text-white bg-secRed font-medium rounded text-sm w-full sm:w-auto md:px-12 md:py-4 px-4 py-2 text-center">Send Message</button>
+                         </div>
+                    </form>
+               </div>
+          </div>
+     </div>
 
      <footer class=" bg-black py-[2rem] w-full px-[4rem] mx-auto text-white flex-col justify-center items-center space-y-5">
           <div class="grid md:grid-cols-5 grid-cols-1 md:h-[50vh] py-[2rem] mx-auto md:space-y-0 space-y-5">
@@ -147,7 +181,7 @@
                      <h1 class="font-semibold text-xl">Subscribe</h1>
                      <div class="text-light text-sm opacity-80">Get 10% off your first order</div>
                      <form action="">
-                          <div class="relative mb-6 w-5/6 border border-gray-300">
+                          <div class="relative mb-6 w-5/6 border-none">
                                <div class="absolute inset-y-0 end-1 flex items-center justify-center cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-300">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
